@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais de residencia</title>
+</head>
+<body>
+    <h1>País de Origem</h1>
+    Nasceu no: <input type="text" name="resid" id="resid">
+    <input type="button" value="Verificar" onclick="Comment()">
+    <div id="res"></div>
+
+    <script>
+        function Comment(){
+           var resid1 = window.document.querySelector('input#resid')
+           var res = window.document.querySelector('div#res')
+           var pais = ('resid1')
+           var p2 =(resid1.value)
+           res.innerHTML = `<p>Você gosta de morar no <strong>${p2}?</strong></p>`
+           if (pais == 'Brasil'){
+             res.innerHTML  += `<p>Você é  <strong>Brasileiro!</strong></p>`
+           }
+             res.innerHTML += `<p>Você é <strong>Estrangeiro!</strong></p>`
+        }
+    </script>
+</body>
+</html>

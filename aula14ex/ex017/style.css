@@ -1,0 +1,35 @@
+body{
+background-color: #6cadee;
+font: normal 20pt Arial;
+}
+header{
+color: white;
+text-align: center;
+}
+section{
+    background-color: rgb(245, 248, 244);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.314);
+
+}
+#comando{
+    text-align: center;
+    color: rgb(25, 25, 82);
+}
+select{
+    background-color: #6cadee95;
+    color: rgb(25, 25, 82);
+    margin-left: 160px;
+    padding: 10px 50px;
+    border: #6cadee;
+    
+
+}
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+}

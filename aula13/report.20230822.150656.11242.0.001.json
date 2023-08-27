@@ -1,0 +1,356 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20230822.150656.11242.0.001.json",
+    "dumpEventTime": "2023-08-22T15:06:56Z",
+    "dumpEventTimeStamp": "1692727616250",
+    "processId": 11242,
+    "cwd": "/home/junior/aline-estudos/curso js/aula13",
+    "commandLine": [
+      "node",
+      "/home/junior/aline-estudos/curso js/aula13/node_8deb5d4eae8b4.tmp.js"
+    ],
+    "nodejsVersion": "v12.5.0",
+    "glibcVersionRuntime": "2.23",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.5.0",
+      "v8": "7.5.288.22-node.14",
+      "uv": "1.29.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.5.0/node-v12.5.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.5.0/node-v12.5.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.15.0-142-generic",
+    "osVersion": "#146~16.04.1-Ubuntu SMP Tue Apr 13 09:27:15 UTC 2021",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+        "speed": 2294,
+        "user": 8729800,
+        "nice": 57600,
+        "sys": 1800800,
+        "idle": 39928200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+        "speed": 2294,
+        "user": 8729800,
+        "nice": 57600,
+        "sys": 1800800,
+        "idle": 39928200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+        "speed": 2294,
+        "user": 8729800,
+        "nice": 57600,
+        "sys": 1800800,
+        "idle": 39928200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+        "speed": 2294,
+        "user": 8729800,
+        "nice": 57600,
+        "sys": 1800800,
+        "idle": 39928200,
+        "irq": 0
+      }
+    ],
+    "host": "junior-oliveira"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000acd485",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [node]"
+    },
+    {
+      "pc": "0x00000000009af963",
+      "symbol": "node::OnFatalError(char const*, char const*) [node]"
+    },
+    {
+      "pc": "0x0000000000b06bbe",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000b06f39",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000ce3dd5",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000cef61b",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000cf0337",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000cf2e68",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [node]"
+    },
+    {
+      "pc": "0x0000000000cbc777",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [node]"
+    },
+    {
+      "pc": "0x0000000000f93478",
+      "symbol": "v8::internal::Runtime_AllocateInOldGeneration(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x0000000001315359",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2148368384,
+    "totalCommittedMemory": 2146444648,
+    "usedMemory": 2142597280,
+    "availableMemory": 51831272,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32272,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 1130792,
+        "capacity": 1047328,
+        "used": 114656,
+        "available": 932672
+      },
+      "old_space": {
+        "memorySize": 2145005568,
+        "committedMemory": 2144725000,
+        "capacity": 2142235968,
+        "used": 2142061480,
+        "available": 174488
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 238336,
+        "capacity": 195648,
+        "used": 195648,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 269096,
+        "capacity": 190080,
+        "used": 190080,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047328,
+        "used": 0,
+        "available": 1047328
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 99.8556,
+    "kernelCpuSeconds": 2.74696,
+    "cpuConsumptionPercent": 115.284,
+    "maxRss": 2204643328,
+    "pageFaults": {
+      "IORequired": 82,
+      "IONotRequired": 578583
+    },
+    "fsActivity": {
+      "reads": 19680,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 49.8073,
+    "kernelCpuSeconds": 1.72933,
+    "cpuConsumptionPercent": 57.9063,
+    "fsActivity": {
+      "reads": 18536,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "CLUTTER_IM_MODULE": "xim",
+    "COMPIZ_CONFIG_PROFILE": "ubuntu",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:abstract=/tmp/dbus-yGg5PvyxyY",
+    "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+    "DERBY_HOME": "/usr/lib/jvm/java-8-oracle/db",
+    "DESKTOP_SESSION": "ubuntu",
+    "DISPLAY": ":0",
+    "GDK_BACKEND": "x11",
+    "GDMSESSION": "ubuntu",
+    "GDM_LANG": "pt_BR",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/applications/code.desktop",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "10366",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "GPG_AGENT_INFO": "/home/junior/.gnupg/S.gpg-agent:0:1",
+    "GTK2_MODULES": "overlay-scrollbar",
+    "GTK_IM_MODULE": "ibus",
+    "GTK_MODULES": "gail:atk-bridge:unity-gtk-module",
+    "HOME": "/home/junior",
+    "IM_CONFIG_PHASE": "1",
+    "J2REDIR": "/usr/lib/jvm/java-8-oracle/jre",
+    "J2SDKDIR": "/usr/lib/jvm/java-8-oracle",
+    "JAVA_HOME": "/usr/lib/jvm/java-8-oracle",
+    "JOB": "dbus",
+    "LANG": "pt_BR.UTF-8",
+    "LANGUAGE": "pt_BR:",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "LOGNAME": "junior",
+    "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "Unity",
+    "PATH": "/home/junior/bin:/home/junior/.local/bin:/home/junior/bin:/home/junior/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/junior/flutter/flutter/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/junior/flutter/flutter/bin",
+    "PWD": "/home/junior",
+    "QT4_IM_MODULE": "xim",
+    "QT_ACCESSIBILITY": "1",
+    "QT_IM_MODULE": "ibus",
+    "QT_LINUX_ACCESSIBILITY_ALWAYS_ON": "1",
+    "QT_QPA_PLATFORMTHEME": "appmenu-qt5",
+    "SESSION": "ubuntu",
+    "SESSIONTYPE": "gnome-session",
+    "SESSION_MANAGER": "local/junior-oliveira:@/tmp/.ICE-unix/3436,unix/junior-oliveira:/tmp/.ICE-unix/3436",
+    "SHELL": "/bin/bash",
+    "SHLVL": "1",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "UPSTART_SESSION": "unix:abstract=/com/ubuntu/upstart-session/1000/3206",
+    "USER": "junior",
+    "VSCODE_AMD_ENTRYPOINT": "vs/workbench/api/node/extensionHostProcess",
+    "VSCODE_CODE_CACHE_PATH": "/home/junior/.config/Code/CachedData/695af097c7bd098fbf017ce3ac85e09bbc5dda06",
+    "VSCODE_CRASH_REPORTER_PROCESS_TYPE": "extensionHost",
+    "VSCODE_CWD": "/home/junior",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "/run/user/1000/vscode-1b9f6b61-1.79-main.sock",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"pt-br\",\"osLocale\":\"pt-br\",\"availableLanguages\":{\"*\":\"pt-br\"},\"_languagePackId\":\"6ff4c721842b21ec94ff543dbdd127cd.pt-br\",\"_translationsConfigFile\":\"/home/junior/.config/Code/clp/6ff4c721842b21ec94ff543dbdd127cd.pt-br/tcf.json\",\"_cacheRoot\":\"/home/junior/.config/Code/clp/6ff4c721842b21ec94ff543dbdd127cd.pt-br\",\"_resolvedLanguagePackCoreLocation\":\"/home/junior/.config/Code/clp/6ff4c721842b21ec94ff543dbdd127cd.pt-br/695af097c7bd098fbf017ce3ac85e09bbc5dda06\",\"_corruptedFile\":\"/home/junior/.config/Code/clp/6ff4c721842b21ec94ff543dbdd127cd.pt-br/corrupted.info\",\"_languagePackSupport\":true}",
+    "VSCODE_PID": "10366",
+    "XAUTHORITY": "/home/junior/.Xauthority",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+    "XDG_GREETER_DATA_DIR": "/var/lib/lightdm-data/junior",
+    "XDG_MENU_PREFIX": "gnome-",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XDG_SEAT": "seat0",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "XDG_SESSION_ID": "c3",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+    "XDG_SESSION_TYPE": "x11",
+    "XDG_VTNR": "7",
+    "XMODIFIERS": "@im=ibus",
+    "_": "/usr/share/code/code",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "1"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 23154,
+      "hard": 23154
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/librt.so.1",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
